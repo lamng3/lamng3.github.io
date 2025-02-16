@@ -21,12 +21,12 @@ sass:
 navbar:
  - name: "cv"
    link: ""
- - name: "blog"
-   link: "/blog"
+#  - name: "blog"
+  #  link: "/blog"
  - name: "github"
    link: "https://github.com/lamng3"
- - name: "google scholar"
-   link: ""
+ - name: "open review"
+   link: "https://openreview.net/profile?id=~Lam_T_Nguyen1"
 
 markdown: kramdown
 kramdown:
