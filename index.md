@@ -11,7 +11,7 @@ I am interested in Large Language Models, Efficient Machine Learning, and Multi-
 You can contact me at ltn18 at case dot edu.
 
 ### Thesis
-1. [**in progress**]()
+1. [**work in progress**]()
 *M.Sc. Thesis, Department of Computer Science and Data Sciences, Case Western Reserve University, 2025*
 <!-- \[[bibtex](bibtex/phd-thesis.txt)\]
 \[[pdf (33.4MB)](/papers/thesis.pdf)\]
