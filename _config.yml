@@ -1,5 +1,5 @@
-title: Lam Nguyen
-author: Lam Nguyen
+title: Lam T Nguyen
+author: Lam T Nguyen
 subtitle: MS in Computer Science
 
 google_analytics: G-ZEFRYNXSX4
@@ -8,7 +8,7 @@ url:
 baseurl:
 
 footer_url:
-footer_text: "Copyright © 2025 Lam Nguyen"
+footer_text: "Copyright © 2025 Lam T Nguyen"
 
 profile-picture: assets/profile.jpg
 favicon_location:
@@ -24,7 +24,7 @@ navbar:
  - name: "blog"
    link: "/blog"
  - name: "github"
-   link: "https://github.com/lamgng3"
+   link: "https://github.com/lamng3"
  - name: "google scholar"
    link: ""
 
