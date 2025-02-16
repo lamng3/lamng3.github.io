@@ -4,7 +4,7 @@ layout: default
 
 <img class="profile-picture" src="{{site.baseurl}}/{{site.profile-picture}}">
 
-I'm Lam T Nguyen, a M.Sc. student from the Department of Computer Science and Data Sciences at Case Western Reserve University. I graduated Cum Laude with a B.Sc. in Computer Science from Case Western Reserve University in 2024.
+I'm Lam Nguyen, a M.Sc. student from the Department of Computer Science and Data Sciences at Case Western Reserve University. I graduated Cum Laude with a B.Sc. in Computer Science from Case Western Reserve University in 2024.
 
 I am interested in Large Language Models, Efficient Machine Learning, and Multi-agent Systems. I am fortunate to be advised by [Yinghui Wu](https://yinghwu.github.io) and [Xiaotian Han](https://ahxt.github.io).
 
@@ -20,7 +20,7 @@ You can contact me at ltn18 at case dot edu.
 ### Publications & Preprints
 
 <!-- 1. [**LAM-Onto: A  Large Action Model for Ontology and Entity Matching**]() -->
-<!-- **Lam T Nguyen**, Erika Barcelos, Roger French, Yinghui Wu -->
+<!-- **Lam Nguyen**, Erika Barcelos, Roger French, Yinghui Wu -->
 <!-- *Submitted to the International Semantic Web Conference (ISWC), 2025* -->
 <!-- \[[pdf]()\] -->
 <!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
@@ -38,7 +38,7 @@ You can contact me at ltn18 at case dot edu.
 <!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
 
 1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://openreview.net/pdf?id=OwHfC8Hrfb)
-Mohsen Hariri, **Lam T Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xiaotian Han, Vipin Chaudhary
+Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xiaotian Han, Vipin Chaudhary
 *Submitted to the Association for Computational Linguistics (ACL), 2025*
 \[[pdf](https://openreview.net/pdf?id=OwHfC8Hrfb)\]
 \[[code](https://tinyurl.com/kv-adaquant)\]
