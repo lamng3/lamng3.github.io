@@ -6,7 +6,7 @@ layout: default
 
 I'm Lam T Nguyen, a M.Sc. student from the Department of Computer Science and Data Sciences at Case Western Reserve University. I graduated Cum Laude with a B.Sc. in Computer Science from Case Western Reserve University in 2024.
 
-I am interested in Large Language Models, Efficient Machine Learning, and Multi-agent Systems.
+I am interested in Large Language Models, Efficient Machine Learning, and Multi-agent Systems. I am fortunate to be advised by [Yinghui Wu](https://yinghwu.github.io) and [Xiaotian Han](https://ahxt.github.io).
 
 You can contact me at ltn18 at case dot edu.
 
