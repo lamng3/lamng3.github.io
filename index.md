@@ -57,7 +57,7 @@ Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xi
 I enjoy composing songs. Songs that are near and dear to my heart are listed here.
 
 1. [**Tea and Coffee**](https://on.soundcloud.com/abgfMbMrcV9uYuDU7) 
-**Lam T Nguyen**
+**Lam Nguyen**
 *Uploaded to SoundCloud (3k+ streams), 2019*
 
 <!-- <div class="rowofposts">
