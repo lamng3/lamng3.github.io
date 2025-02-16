@@ -4,7 +4,7 @@ layout: default
 
 <img class="profile-picture" src="{{site.baseurl}}/{{site.profile-picture}}">
 
-I'm Lam T Nguyen, an M.Sc. student from the Department of Computer Science and Data Sciences at Case Western Reserve University. I graduated Cum Laude with a B.Sc. in Computer Science from Case Western Reserve University in 2024.
+I'm Lam T Nguyen, a M.Sc. student from the Department of Computer Science and Data Sciences at Case Western Reserve University. I graduated Cum Laude with a B.Sc. in Computer Science from Case Western Reserve University in 2024.
 
 I am interested in Large Language Models, Efficient Machine Learning, and Multi-agent Systems.
 
@@ -19,11 +19,11 @@ You can contact me at ltn18 at case dot edu.
 
 ### Publications & Preprints
 
-1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**]()
+1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://openreview.net)
 Mohsen Hariri, **Lam T Nguyen**, et al.
 *Submitted to the Association for Computational Linguistics (ACL), 2025*
 <!-- \[[bibtex](bibtex/icra21.txt)\] -->
-<!-- \[[pdf](/papers/icra21.pdf)\] -->
+\[[pdf](/papers/icra21.pdf)\]
 <!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
 <!-- \[[talk](https://youtu.be/XNVsO4b2sw4)\] -->
 <!-- [<a class="gif-link" id="icra21">gif</a>] -->
