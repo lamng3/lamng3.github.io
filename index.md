@@ -40,7 +40,7 @@ Mohsen Hariri, **Lam T Nguyen**, et al.
   - Software Engineer Intern  
 
 ### Music
-I enjoy composing songs. A song that is near and dear to my heart is listed here.
+I enjoy composing songs. Songs that are near and dear to my heart are listed here.
 
 1. [Tea and Coffee](https://on.soundcloud.com/abgfMbMrcV9uYuDU7) 
 **Lam T Nguyen**
