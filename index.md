@@ -6,9 +6,6 @@ layout: default
 
 I'm Lam Nguyen, an MS student from the Department of Computer Science and Data Sciences at Case Western Reserve University. I received a B.S in Computer Science from Case Western Reserve University in 2024.
 
-I am generally interested in reasoning about human intention and behavior given arbitrary task spaces for the purposes of continuous human robot interaction. Currently exploring reasoning and interaction for manipulators. Previously, I worked on human intention modeling and prediction for continuous human-in-the-loop control of aerial and ground robots and agile safe navigation in unknown and unstructured environments.
-My areas of focus are robot system design, navigation, task representation, human robot interaction.
-
 You can contact me at ltn18 at case dot edu.
 
 ### Thesis
@@ -46,24 +43,16 @@ Topological Maps**
 
 ### Internships
 **Microsoft, Redmond, WA** (May 2024 – Aug 2024)  
-- AI Software Engineer Intern 
-- Microsoft Security Copilot
-- Privacy Copilot Agents
+- Software Engineer Intern 
 
 **Amazon, Seattle, WA** (Aug 2023 – Dec 2023)  
-- AI Software Engineer Intern  
-- Alexa Voice Shopping
-- LLM Benchmarking Suite
+- Software Engineer Intern  
 
 **Microsoft, Redmond, WA** (May 2023 – Aug 2023)  
 - Software Engineer Intern  
-- Data Governance Platform
-- Data Archival Pipeline
 
 **Microsoft, Redmond, WA** (May 2022 – Aug 2022)  
 - Software Engineer Intern  
-- Microsoft Purview
-- Virtual Configuration Service 
 
 ### Music
 I enjoy composing songs. A song that is near and dear to my heart is listed here.
