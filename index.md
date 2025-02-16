@@ -19,11 +19,11 @@ You can contact me at ltn18 at case dot edu.
 
 ### Publications & Preprints
 
-1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://openreview.net)
+1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://openreview.net/pdf?id=OwHfC8Hrfb)
 Mohsen Hariri, **Lam T Nguyen**, et al.
 *Submitted to the Association for Computational Linguistics (ACL), 2025*
 <!-- \[[bibtex](bibtex/icra21.txt)\] -->
-\[[pdf](/papers/icra21.pdf)\]
+\[[pdf](https://openreview.net/pdf?id=OwHfC8Hrfb)\]
 <!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
 <!-- \[[talk](https://youtu.be/XNVsO4b2sw4)\] -->
 <!-- [<a class="gif-link" id="icra21">gif</a>] -->
