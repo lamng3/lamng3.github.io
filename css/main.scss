@@ -4,18 +4,16 @@
 
 // Customization Variables
 
-$accent: #0eb077;
-$accentlight: rgba(14, 176, 119, 0.3);
+$accent: rgba(43, 100, 207, 1.0);
+$accentlight: rgba(43, 100, 207, 0.3);
 
-$inlinecodetext: #0a8f64;
-$inlinecodeborder: #CFE3DD;
-$inlinecodebg: #e9f2ef;
-// $codeblocktext: #464646;
-// $codeblockborder: #e5e5e5;
-// $codeblockbg: #f8f8f8;
-$codeblocktext: #0a8f64;
-$codeblockborder: #CFE3DD;
-$codeblockbg: #e9f2ef;
+$inlinecodetext: rgba(43, 100, 207, 1.0);
+$inlinecodeborder: rgba(43, 100, 207, 0.2);
+$inlinecodebg: rgba(43, 100, 207, 0.05);
+
+$codeblocktext: rgba(43, 100, 207, 1.0);
+$codeblockborder: rgba(85, 131, 217, 0.3);
+$codeblockbg: rgba(54, 108, 209, 0.01);
 
 $image-size: 150px;
 
