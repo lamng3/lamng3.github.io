@@ -19,15 +19,29 @@ You can contact me at ltn18 at case dot edu.
 
 ### Publications & Preprints
 
-1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://openreview.net/pdf?id=OwHfC8Hrfb)
-Mohsen Hariri, **Lam T Nguyen**, et al.
-*Submitted to the Association for Computational Linguistics (ACL), 2025*
-<!-- \[[bibtex](bibtex/icra21.txt)\] -->
-\[[pdf](https://openreview.net/pdf?id=OwHfC8Hrfb)\]
+<!-- 1. [**LAM-Onto: A  Large Action Model for Ontology and Entity Matching**]() -->
+<!-- **Lam T Nguyen**, Erika Barcelos, Roger French, Yinghui Wu -->
+<!-- *Submitted to the International Semantic Web Conference (ISWC), 2025* -->
+<!-- \[[pdf]()\] -->
 <!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
-<!-- \[[talk](https://youtu.be/XNVsO4b2sw4)\] -->
-<!-- [<a class="gif-link" id="icra21">gif</a>] -->
-<!-- <img class="gif" id="icra21-gif" src="assets/gifs/icra21.gif"/> -->
+
+<!-- 2. [**Reasoning Model Merging**]() -->
+<!-- **Lam T Nguyen**, Mohsen Hariri, Wang Yang, Xiaotian Han -->
+<!-- *Submitted to the Conference on Conference on Language Modeling (COLM), 2025* -->
+<!-- \[[pdf]()\] -->
+<!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
+
+<!-- 3. [**LLMDebate**]() -->
+<!-- **Lam T Nguyen**, Erika Barcelos, Roger French, Yinghui Wu -->
+<!-- *Submitted to the Conference on Information and Knowledge Management (CIKM), 2025* -->
+<!-- \[[pdf]()\] -->
+<!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
+
+1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://openreview.net/pdf?id=OwHfC8Hrfb)
+Mohsen Hariri, **Lam T Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xiaotian Han, Vipin Chaudhary
+*Submitted to the Association for Computational Linguistics (ACL), 2025*
+\[[pdf](https://openreview.net/pdf?id=OwHfC8Hrfb)\]
+\[[code](https://tinyurl.com/kv-adaquant)\]
 
 ### Internships
 - Microsoft, Redmond, WA. (May 2024 – Aug 2024)  
