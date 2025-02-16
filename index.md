@@ -42,7 +42,7 @@ Mohsen Hariri, **Lam T Nguyen**, et al.
 ### Music
 I enjoy composing songs. Songs that are near and dear to my heart are listed here.
 
-1. [Tea and Coffee](https://on.soundcloud.com/abgfMbMrcV9uYuDU7) 
+1. [**Tea and Coffee**](https://on.soundcloud.com/abgfMbMrcV9uYuDU7) 
 **Lam T Nguyen**
 *Uploaded to SoundCloud (3k+ streams), 2019*
 
