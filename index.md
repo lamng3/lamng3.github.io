@@ -8,6 +8,8 @@ I'm Lam Nguyen, a M.Sc. student from the Department of Computer Science and Data
 
 I am interested in Large Language Models, Efficient Machine Learning, and Multi-agent Systems. I am fortunate to be advised by [Yinghui Wu](https://yinghwu.github.io) and [Xiaotian Han](https://ahxt.github.io).
 
+Alongside research, I have been advancing my algorithmic knowledge and competitive programming skills, achieving [Level Knight]() on LeetCode.
+
 You can contact me at ltn18 at case dot edu.
 
 ### Thesis
@@ -51,7 +53,7 @@ Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xi
 - Microsoft, Redmond, WA. (May 2023 – Aug 2023)  
   - Software Engineer Intern  
 - Microsoft, Redmond, WA. (May 2022 – Aug 2022)  
-  - Software Engineer Intern  
+  - Software Engineer Intern
 
 ### Music
 I enjoy composing songs. Songs that are near and dear to my heart are listed here.
