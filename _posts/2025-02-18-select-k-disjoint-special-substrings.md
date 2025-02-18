@@ -69,22 +69,6 @@ Return `true` if it is possible to select `k` such disjoint special substrings; 
 
 ---
 
-### Chain-of-Thought Reasoning
-
-Loren ipsum
-
----
-
-### Solution
-
-Loren ipsum
-
-#### Complexity Analysis
-
-Loren ipsum
-
----
-
 ### Example Code
 
 ```java
@@ -164,6 +148,10 @@ class Solution {
     }
 }
 ```
+
+#### Complexity Analysis
+- Time Complexity: O(nlogn)
+- Space Complexity: O(n)
 
 ---
 
