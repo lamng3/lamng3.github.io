@@ -3,7 +3,7 @@ layout: post
 category: blog
 title: 3458. Select K Disjoint Special Substrings
 snippet: Weekly Contest 437
-tags: [algorithms, leetcode, medium]
+tags: [algorithms, leetcode]
 ---
 
 Give this problem a try [3458. Select K Disjoint Special Substrings](https://leetcode.com/problems/select-k-disjoint-special-substrings/description/)
@@ -157,4 +157,4 @@ class Solution {
 
 ### Sign-off
 
-Congratulations on making it this far. I believe this problem is **medium-hard**, as it demands an elegant blend of straightforward techniques and keen observation. Best of luck in the future competitions!
+Congratulations on making it this far! Although LeetCode rates this as a **medium** question, I actually consider it **medium-hard** because it requires a smart mix of basic techniques and sharp observation. Best of luck in your future competitions!
