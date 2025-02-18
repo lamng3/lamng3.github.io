@@ -21,8 +21,8 @@ sass:
 navbar:
  - name: "cv"
    link: ""
-#  - name: "blog"
-  #  link: "/blog"
+ - name: "blog"
+   link: "/blog"
  - name: "github"
    link: "https://github.com/lamng3"
  - name: "open review"

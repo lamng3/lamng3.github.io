@@ -55,20 +55,21 @@ Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xi
 - Microsoft, Redmond, WA. (May 2022 – Aug 2022)  
   - Software Engineer Intern
 
+### LeetCode
+<div class="rowofposts">
+
+{% for post in site.posts %}
+  {% if post.category == "leetcode" %}
+
+      {% include postbox-nosnippet.html %}
+      {% endif %}
+    {% endfor %}
+
+</div>
+
 ### Music
 I enjoy composing songs. Songs that are near and dear to my heart are listed here.
 
 1. [**Tea and Coffee**](https://on.soundcloud.com/abgfMbMrcV9uYuDU7) 
 **Lam Nguyen**
 *Uploaded to SoundCloud (3k+ streams), 2019*
-
-<!-- <div class="rowofposts">
-
-{% for post in site.posts %}
-  {% if post.category == "music" %}
-
-      {% include postbox-nosnippet.html %}
-      {% endif %}
-    {% endfor %}
-
-</div> -->
