@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: x
 title: Vibration reduction methods for quadrotors
 snippet: How to mechanically damp out as much noise on those IMU signals as possible.
 tags: [robotics, hardware]

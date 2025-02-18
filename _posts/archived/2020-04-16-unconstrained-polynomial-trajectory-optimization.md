@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: x
 title: Derivation of Unconstrained Polynomial Trajectory Optimization
 snippet: How to compute the spline trajectory representation given higher order derivative constraints.
 tags: [robotics, math]

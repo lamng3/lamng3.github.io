@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: x
 title: Building multiple ROS nodes in one package
 snippet: How to setup and export multiple libraries and executable from one package
 tags: [C++, robotics]

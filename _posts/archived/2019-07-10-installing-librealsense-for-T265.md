@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: x
 title: Installing librealsense for T265 on various compute platforms
 snippet: Attempting to install librealsense on various small compute platforms (Intel Aero UAV, Odroid XU4, Nvidia TX2)
 tags: [robotics, hardware]

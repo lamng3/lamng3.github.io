@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: x
 title: How to structure and write an abstract class
 snippet: quick tutorial on abstract classes using coffee makers as an example
 tags: [C++]

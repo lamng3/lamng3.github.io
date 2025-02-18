@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: x
 title: CHOMP Gradient derivation
 snippet: the derivation for the functional gradient for the CHOMP paper.
 tags: [robotics, math]

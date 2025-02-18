@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: x
 title: Tutorial on ROS Pluginlib
 snippet: How to actually write a plugin in ROS
 tags: [C++, robotics]
