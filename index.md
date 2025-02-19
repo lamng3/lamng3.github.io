@@ -55,7 +55,7 @@ Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xi
   - Work with [Krishna Teja Kurapati](https://www.linkedin.com/in/krishna-teja-kurapati-27192370/), [Sunil Kadam](https://www.linkedin.com/in/sunil-kadam-9813905/).
 - Amazon, Seattle, WA. (Aug 2023 – Dec 2023)  
   - Software Engineer Intern. 
-  - Work with [Ashutosh Apte](https://www.linkedin.com/in/ashutoshapte/) [Gaurav Dhir](https://www.linkedin.com/in/gauravdhir/).
+  - Work with [Ashutosh Apte](https://www.linkedin.com/in/ashutoshapte/), [Gaurav Dhir](https://www.linkedin.com/in/gauravdhir/).
 - Microsoft, Redmond, WA. (May 2023 – Aug 2023)  
   - Software Engineer Intern. 
   - Work with [Ryan Bane](https://www.linkedin.com/in/rbane/), [Vedanth Narayanan](https://www.linkedin.com/in/narayave/), [Pratik Sanyal](https://www.linkedin.com/in/spsps/).
