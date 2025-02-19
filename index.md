@@ -21,7 +21,7 @@ You can contact me at ltn18 at case dot edu.
 
 ### Publications & Preprints
 
-<!-- 1. [**LAM-Onto: A  Large Action Model for Ontology and Entity Matching**]() -->
+<!-- 1. [**LAM-Taxo: A  Large Action Model for End-to-End Taxonomy Engineering**]() -->
 <!-- **Lam Nguyen**, Erika Barcelos, Roger French, Yinghui Wu -->
 <!-- *Submitted to the International Semantic Web Conference (ISWC), 2025* -->
 <!-- \[[pdf]()\] -->

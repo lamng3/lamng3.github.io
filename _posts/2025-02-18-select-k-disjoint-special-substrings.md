@@ -150,7 +150,7 @@ class Solution {
 ```
 
 #### Complexity Analysis
-- Time Complexity: O(nlogn)
+- Time Complexity: O(n)
 - Space Complexity: O(n)
 
 ---
