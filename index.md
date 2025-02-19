@@ -45,6 +45,10 @@ Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xi
 \[[pdf](https://openreview.net/pdf?id=OwHfC8Hrfb)\]
 \[[code](https://tinyurl.com/kv-adaquant)\]
 
+### Educations
+- *Aug. 2024 - Aug. 2025*, M.Sc., Computer Science, Case Western Reserve University.
+- *Aug. 2020 - May. 2024*, B.Sc., Computer Science, Case Western Reserve University.
+
 ### Internships
 - Microsoft, Redmond, WA. (May 2024 – Aug 2024)  
   - Software Engineer Intern. 
