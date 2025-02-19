@@ -47,13 +47,13 @@ Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xi
 
 ### Internships
 - Microsoft, Redmond, WA. (May 2024 – Aug 2024)  
-  - AI Software Engineer Intern 
+  - Software Engineer Intern. Host: [Sunil Kadam](https://www.linkedin.com/in/sunil-kadam-9813905/)
 - Amazon, Seattle, WA. (Aug 2023 – Dec 2023)  
-  - AI Software Engineer Intern  
+  - Software Engineer Intern. Host: [Gaurav Dhir](https://www.linkedin.com/in/gauravdhir/)
 - Microsoft, Redmond, WA. (May 2023 – Aug 2023)  
-  - Software Engineer Intern  
+  - Software Engineer Intern. Host: [Ryan Bane](https://www.linkedin.com/in/rbane/)
 - Microsoft, Redmond, WA. (May 2022 – Aug 2022)  
-  - Software Engineer Intern
+  - Software Engineer Intern. Host: [Pratik Sanyal](https://www.linkedin.com/in/spsps/)
 
 ### Open Source
 
