@@ -70,8 +70,8 @@ I merged LLM models across different schemes:
 - **Long-Long Reasoning**: [QwQ-32B-Preview + SkyT1-32B-Preview](https://huggingface.co/ltn18/QwQ-SkyT1-32B-Preview) 
 - **Long-Short Reasoning**: [DeepSeek-R1-Distill-Qwen-1.5B + Qwen2.5-Math-1.5B](https://huggingface.co/ltn18/DeepSeek-R1-Distill-Qwen-1.5B-Qwen2.5-Math-1.5B)
 
-#### Tree-of-Thought
-I contributed to the repository of [Tree-of-Thought (NeurIPS 2023)](https://arxiv.org/abs/2305.10601) \[[PR#70](https://github.com/princeton-nlp/tree-of-thought-llm/commit/8050e67d0e3a0fddc424d7fa5801538722a4c4cc)\]
+#### Tree of Thoughts
+I contributed to the repository of [Tree of Thoughts (NeurIPS 2023)](https://arxiv.org/abs/2305.10601) \[[PR#70](https://github.com/princeton-nlp/tree-of-thought-llm/commit/8050e67d0e3a0fddc424d7fa5801538722a4c4cc)\]
 
 ### Music
 I enjoy composing songs. Songs that are near and dear to my heart are listed here.
