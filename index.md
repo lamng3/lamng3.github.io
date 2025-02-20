@@ -8,7 +8,7 @@ I'm Lam Nguyen, a M.Sc. student from the Department of Computer Science and Data
 
 I am interested in Large Language Models, Efficient Machine Learning, and Multi-agent Systems. I am fortunate to be advised by [Yinghui Wu](https://yinghwu.github.io) and [Xiaotian Han](https://ahxt.github.io).
 
-Alongside research, I have been advancing my algorithmic knowledge and competitive programming skills, achieving [Level Knight]() on LeetCode.
+Alongside research, I have been advancing my algorithmic knowledge and competitive programming skills, achieving [Level Knight]() on LeetCode. I enjoy solving [Chess.com](https://www.chess.com/home) puzzles, peaking at [2470 ELO](https://www.chess.com/stats/puzzles/3takes).
 
 You can contact me at ltn18 at case dot edu.
 
