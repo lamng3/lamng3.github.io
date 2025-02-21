@@ -3,7 +3,7 @@ layout: post
 category: blog
 title: 3458. Select K Disjoint Special Substrings
 snippet: Weekly Contest 437
-tags: [algorithms, leetcode]
+tags: [algorithms, leetcode, medium-hard]
 ---
 
 Give this problem a try [3458. Select K Disjoint Special Substrings](https://leetcode.com/problems/select-k-disjoint-special-substrings/description/)

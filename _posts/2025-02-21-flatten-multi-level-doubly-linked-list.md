@@ -3,7 +3,7 @@ layout: post
 category: blog
 title: 430. Flatten a Multilevel Doubly Linked List
 snippet: Daily Practice
-tags: [algorithms, leetcode]
+tags: [algorithms, leetcode, medium]
 ---
 
 Give this problem a try [430. Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/)
@@ -53,60 +53,81 @@ Return the head of the flattened list. The nodes in the list must have all of th
 
 ### Prerequisite Knowledge
 
-- DFS
-- Linked List
-- Tree Traversal
+- Implementation
+- String Processing
 
 ---
 
 ### Example Code
 ```java
-/*
-// Definition for a Node.
-class Node {
-    public int val;
-    public Node prev;
-    public Node next;
-    public Node child;
-};
-*/
-
 class Solution {
-    public Node flatten(Node head) {
-        if (head == null) return head;
-        
-        Node pseudoHead = new Node(0, null, head, null);
-        Node curr, prev = pseudoHead;
-        
-        Stack<Node> stack = new Stack<>();
-        stack.push(head);
+    public List<String> fullJustify(String[] words, int maxWidth) {
+        int n = words.length;
+        List<String> answer = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
 
-        while (!stack.isEmpty()) {
-            curr = stack.pop();
-            prev.next = curr;
-            curr.prev = prev;
-
-            if (curr.next != null) stack.push(curr.next); // next processed after flatten
-            if (curr.child != null) {
-                // flatten
-                stack.push(curr.child);
-                curr.child = null;
+        int curWidth = 0;
+        int wordCount = 0;
+        for (int i = 0; i < n; i++) {
+            int candWidth = words[i].length();
+            if (curWidth + candWidth + wordCount <= maxWidth) {
+                curWidth += candWidth;
+                wordCount++;
             }
-            prev = curr;
-        }
-        
-        pseudoHead.next.prev = null;
-        return pseudoHead.next;
+            else {
+                int extraSpaces = maxWidth - curWidth;
+                if (wordCount == 1) {
+                    sb = new StringBuilder();
+                    sb.append(words[i-1]);
+                    for (int j = 0; j < extraSpaces; j++) sb.append(" ");
+                    answer.add(sb.toString());
+                }
+                else {
+                    sb = new StringBuilder();
+                    // distribute extraSpaces to wordCount - 1
+                    int[] alloc = new int[wordCount-1];
+                    extraSpaces -= (wordCount - 1);
+                    for (int j = 0; j < wordCount - 1; j++) alloc[j] = 1;
+                    
+                    // allocate remaining extraSpaces
+                    while (extraSpaces > 0) {
+                        for (int j = 0; j < wordCount - 1; j++) {
+                            alloc[j]++;
+                            extraSpaces--;
+                            if (extraSpaces == 0) break;
+                        }
+                    }
+
+                    for (int j = i - wordCount; j < i - 1; j++) {
+                        sb.append(words[j]);
+                        for (int k = 0; k < alloc[j - (i - wordCount)]; k++) sb.append(" ");
+                    }
+                    sb.append(words[i-1]);
+                    answer.add(sb.toString());
+                }
+                curWidth = candWidth;
+                wordCount = 1;
+            }
+        } 
+
+        int extraSpaces = maxWidth - curWidth - (wordCount - 1);
+        sb = new StringBuilder();
+        for (int i = n - wordCount; i < n-1; i++) sb.append(words[i]).append(" ");
+        sb.append(words[n-1]);
+        for (int i = 0; i < extraSpaces; i++) sb.append(" ");
+        answer.add(sb.toString());
+
+        return answer;
     }
 }
 ```
 
 #### Complexity Analysis
-- Time Complexity: O(n)
+- Time Complexity: within `O(1e7)`
 - Space Complexity: O(n)
 
 ---
 
 ### Sign-off
 
-Congratulations on making it this far! Best of luck in your future competitions!
+Congratulations on making it this far! In my view, this problem is rated **hard** mainly because the implementation can be quite tricky, rather than due to any exceptional algorithmic insight. Best of luck in your future competitions!
