@@ -6,7 +6,7 @@ snippet: Daily Practice
 tags: [algorithms, leetcode, hard]
 ---
 
-Give this problem a try [68. Text Justification](https://leetcode.com/problems/text-justification/description/)
+Give this problem a try [68. Text Justification](https://leetcode.com/problems/text-justification/description/).
 
 ---
 
