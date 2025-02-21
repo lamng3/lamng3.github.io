@@ -53,8 +53,9 @@ Return the head of the flattened list. The nodes in the list must have all of th
 
 ### Prerequisite Knowledge
 
-- Implementation
-- String Processing
+- DFS
+- Linked List
+- Tree Traversal
 
 ---
 
@@ -123,11 +124,11 @@ class Solution {
 ```
 
 #### Complexity Analysis
-- Time Complexity: within `O(1e7)`
+- Time Complexity: O(n)
 - Space Complexity: O(n)
 
 ---
 
 ### Sign-off
 
-Congratulations on making it this far! In my view, this problem is rated **hard** mainly because the implementation can be quite tricky, rather than due to any exceptional algorithmic insight. Best of luck in your future competitions!
+Congratulations on making it this far! Best of luck in your future competitions!

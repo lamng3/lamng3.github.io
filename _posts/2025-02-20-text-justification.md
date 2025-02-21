@@ -60,4 +60,88 @@ For the last line of text, it should be left-justified, and no extra space is in
 - `words[i]` consists of only English letters and symbols.
 - `1 <= maxWidth <= 100`
 - `words[i].length <= maxWidth`
+
+---
+
+### Prerequisite Knowledge
+
+- Implementation
+- String Manipulation
+
+---
+
+### Example Code
+
+```java
+class Solution {
+    public List<String> fullJustify(String[] words, int maxWidth) {
+        int n = words.length;
+        List<String> answer = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
+
+        int curWidth = 0;
+        int wordCount = 0;
+        for (int i = 0; i < n; i++) {
+            int candWidth = words[i].length();
+            if (curWidth + candWidth + wordCount <= maxWidth) {
+                curWidth += candWidth;
+                wordCount++;
+            }
+            else {
+                int extraSpaces = maxWidth - curWidth;
+                if (wordCount == 1) {
+                    sb = new StringBuilder();
+                    sb.append(words[i-1]);
+                    for (int j = 0; j < extraSpaces; j++) sb.append(" ");
+                    answer.add(sb.toString());
+                }
+                else {
+                    sb = new StringBuilder();
+                    // distribute extraSpaces to wordCount - 1
+                    int[] alloc = new int[wordCount-1];
+                    extraSpaces -= (wordCount - 1);
+                    for (int j = 0; j < wordCount - 1; j++) alloc[j] = 1;
+                    
+                    // allocate remaining extraSpaces
+                    while (extraSpaces > 0) {
+                        for (int j = 0; j < wordCount - 1; j++) {
+                            alloc[j]++;
+                            extraSpaces--;
+                            if (extraSpaces == 0) break;
+                        }
+                    }
+
+                    for (int j = i - wordCount; j < i - 1; j++) {
+                        sb.append(words[j]);
+                        for (int k = 0; k < alloc[j - (i - wordCount)]; k++) sb.append(" ");
+                    }
+                    sb.append(words[i-1]);
+                    answer.add(sb.toString());
+                }
+                curWidth = candWidth;
+                wordCount = 1;
+            }
+        } 
+
+        int extraSpaces = maxWidth - curWidth - (wordCount - 1);
+        sb = new StringBuilder();
+        for (int i = n - wordCount; i < n-1; i++) sb.append(words[i]).append(" ");
+        sb.append(words[n-1]);
+        for (int i = 0; i < extraSpaces; i++) sb.append(" ");
+        answer.add(sb.toString());
+
+        return answer;
+    }
+}
+```
+
+#### Complexity Analysis
+- Time Complexity: within `O(1e7)`
+- Space Complexity: O(n)
+
+---
+
+### Sign-off
+
+Congratulations on making it this far! In my view, this problem is rated **hard** mainly because the implementation can be quite tricky, rather than due to any exceptional algorithmic insight. Best of luck in your future competitions!
     
