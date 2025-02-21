@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: 430. Flatten a Multilevel Doubly Linked List
-snippet: Weekly Contest 437
+snippet: Daily Practice
 tags: [algorithms, leetcode]
 ---
 
