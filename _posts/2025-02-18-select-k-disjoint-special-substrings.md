@@ -8,6 +8,8 @@ tags: [algorithms, leetcode, medium-hard]
 
 Give this problem a try [3458. Select K Disjoint Special Substrings](https://leetcode.com/problems/select-k-disjoint-special-substrings/description/)
 
+**Note**: Some might wonder why you'd use this odd data structure. One use case is a simplified version of `Git` branching, where flattening the list is like merging all branches, even though that's not exactly how git merge works.
+
 ---
 
 ### Problem Statement
