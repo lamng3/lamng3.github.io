@@ -8,7 +8,7 @@ I'm Lam Nguyen, a M.Sc. student from the Department of Computer Science and Data
 
 I am interested in Large Language Models, Efficient Machine Learning, and Multi-agent Systems. I am fortunate to be advised by [Yinghui Wu](https://yinghwu.github.io) and [Xiaotian Han](https://ahxt.github.io).
 
-<!-- Alongside research, I have been advancing my algorithmic knowledge and competitive programming skills, achieving [Level Guardian]() on LeetCode. I enjoy solving [Chess.com](https://www.chess.com/home) puzzles, peaking at [2470 ELO](https://www.chess.com/stats/puzzles/3takes). -->
+Alongside research, I have been advancing my algorithmic knowledge and competitive programming skills, participating weekly competitions on LeetCode.
 
 You can contact me at ltn18 at case dot edu.
 
@@ -20,24 +20,6 @@ You can contact me at ltn18 at case dot edu.
 \[[talk](https://youtu.be/0qSzzafpmxo)\] -->
 
 ### Publications & Preprints
-
-<!-- 1. [**LAM-Taxo: A  Large Action Model for End-to-End Taxonomy Engineering**]() -->
-<!-- **Lam Nguyen**, Erika Barcelos, Roger French, Yinghui Wu -->
-<!-- *Submitted to the International Semantic Web Conference (ISWC), 2025* -->
-<!-- \[[pdf]()\] -->
-<!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
-
-<!-- 2. [**Reasoning Model Merging**]() -->
-<!-- **Lam T Nguyen**, Mohsen Hariri, Wang Yang, Xiaotian Han -->
-<!-- *Submitted to the Conference on Conference on Language Modeling (COLM), 2025* -->
-<!-- \[[pdf]()\] -->
-<!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
-
-<!-- 3. [**LLMDebate**]() -->
-<!-- **Lam T Nguyen**, Erika Barcelos, Roger French, Yinghui Wu -->
-<!-- *Submitted to the Conference on Information and Knowledge Management (CIKM), 2025* -->
-<!-- \[[pdf]()\] -->
-<!-- \[[code](https://github.com/xuningy/planning_arch)\] -->
 
 1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://openreview.net/pdf?id=OwHfC8Hrfb)
 Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xiaotian Han, Vipin Chaudhary
