@@ -6,7 +6,9 @@ snippet: Daily Practice
 tags: [algorithms, leetcode, medium]
 ---
 
-Give this problem a try [430. Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/)
+Give this problem a try [430. Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/).
+
+**Note**: Some might wonder why you'd use this odd data structure. One use case is a simplified version of `Git` branching, where flattening the list is like merging all branches, even though that's not exactly how git merge works.
 
 ---
 
