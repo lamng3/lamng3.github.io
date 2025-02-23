@@ -31,7 +31,9 @@ Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xi
 - *Aug. 2024 - Aug. 2025*, M.Sc., Computer Science, Case Western Reserve University.
 - *Aug. 2020 - May. 2024*, B.Sc., Computer Science, Case Western Reserve University.
 
-### Internships
+### Experiences
+- ML x DB @ CWRU, Cleveland, OH. (Aug 2024 - Aug 2025)
+  - Graduate Student Researcher.
 - Microsoft, Redmond, WA. (May 2024 – Aug 2024)  
   - Software Engineer Intern. 
 - Amazon, Seattle, WA. (Aug 2023 – Dec 2023)  
