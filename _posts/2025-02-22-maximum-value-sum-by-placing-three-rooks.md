@@ -2,7 +2,7 @@
 layout: post
 category: blog
 title: Maximum Value Sum by Placing Three Rooks I & II
-snippet: Daily Practice
+snippet: Biweekly Practice 137
 tags: [algorithms, leetcode, hard]
 ---
 
