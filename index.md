@@ -21,10 +21,10 @@ You can contact me at ltn18 at case dot edu.
 
 ### Publications & Preprints
 
-1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://openreview.net/pdf?id=OwHfC8Hrfb)
+1. [**More for Keys, Less for Values: Adaptive KV Cache Quantization**](https://arxiv.org/pdf/2502.15075)
 Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xiaotian Han, Vipin Chaudhary
 *Submitted to the Association for Computational Linguistics (ACL), 2025*
-\[[pdf](https://openreview.net/pdf?id=OwHfC8Hrfb)\]
+\[[pdf](https://arxiv.org/pdf/2502.15075)\]
 \[[code](https://tinyurl.com/kv-adaquant)\]
 
 ### Educations
