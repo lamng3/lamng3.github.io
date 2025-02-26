@@ -26,11 +26,29 @@ $nCr = n! \times \text{inv}((n-r)!) \times \text{inv}(r!)$
 where $\text{inv}(a!)$ represents the modular inverse of $a!$.
 
 #### Example Code
-```java
 
+Constant `MOD` is set to $1{,}000{,}000{,}007$, a large prime number frequently used in competitive programming and algorithm design to avoid integer overflow and to guarantee the existence of modular inverses for any integer that is relatively prime to the modulus. The arrays `fact` and `invFact` are used to store the factorial values and their corresponding modular inverses, respectively.
+```java
 private int MOD = 1_000_000_007;
 private long[] fact, invFact;
+```
 
+The following code snippet initializes a modular exponentiation function designed to compute $\text{base}^{\text{exp}}$ modulo a given modulus. This function operates in $O(\log(\text{exp}))$ ~ $O(\log(\text{N}))$ time complexity, which is achieved by repeatedly halving the exponent at each iteration (using the operation `exp >>= 1`).
+```java
+private long modPow(long base, int exp, int mod) {
+    long result = 1;
+    while (exp > 0) {
+        if ((exp & 1) == 1) result = result * base % mod;
+        base = base * base % mod;
+        exp >>= 1;
+    }
+    return result;
+}
+```
+
+According to Fermat's Little Theorem, for a prime number $p$, the expression $a^p - a$ is divisible by $p$. Building on this principle, we can derive that the difference $a^{p-2} - a^{-1}$ is likewise divisible by $p$. Then, we can build the inverse factorial starting with $\text{inv}(n!) = n!^{MOD-2} \% MOD$.
+
+```java
 private void buildFactorials(int n) {
     fact = new long[n+1];
     invFact = new long[n+1];
@@ -41,17 +59,9 @@ private void buildFactorials(int n) {
     invFact[n] = modPow(fact[n], MOD-2, MOD);
     for (int i = n-1; i >= 0; i--) invFact[i] = invFact[i+1] * (i+1) % MOD;
 }
+```
 
-private long modPow(long base, int exp, int mod) {
-    long result = 1;
-    while (exp > 0) {
-        if ((exp & 1) == 1) result = result * base % MOD;
-        base = base * base % MOD;
-        exp >>= 1;
-    }
-    return result;
-}
-
+```java
 private long nCr(int r, int n) {
     if (r < 0 || r > n) return 0;
     return (fact[n] * invFact[r] % MOD) * invFact[n-r] % MOD;
