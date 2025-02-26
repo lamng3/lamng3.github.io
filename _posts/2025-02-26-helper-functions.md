@@ -25,7 +25,7 @@ $nCr = n! \times \text{inv}((n-r)!) \times \text{inv}(r!)$
 
 where $\text{inv}(a!)$ represents the modular inverse of $a!$.
 
-#### Example Code
+#### 1.1 Example Code
 
 Constant `MOD` is set to $1{,}000{,}000{,}007$, a large prime number frequently used in competitive programming and algorithm design to avoid integer overflow and to guarantee the existence of modular inverses for any integer that is relatively prime to the modulus. The arrays `fact` and `invFact` are used to store the factorial values and their corresponding modular inverses, respectively.
 ```java
@@ -46,7 +46,7 @@ private long modPow(long base, int exp, int mod) {
 }
 ```
 
-According to Fermat's Little Theorem, for a prime number $p$, the expression $a^p - a$ is divisible by $p$. Building on this principle, we can derive that the difference $a^{p-2} - a^{-1}$ is likewise divisible by $p$. Then, we can build the inverse factorial starting with $\text{inv}(n!) = n!^{MOD-2} \% MOD$.
+According to Fermat's Little Theorem, for a prime number $p$, the expression $a^p - a$ is divisible by $p$. Building on this principle, we can derive that the difference $a^{p-2} - a^{-1}$ is likewise divisible by $p$. We first build the factorials. Then, we can build the inverse factorials starting with $\text{inv}(n!) = n!^{MOD-2}$ mod MOD.
 
 ```java
 private void buildFactorials(int n) {
@@ -61,6 +61,7 @@ private void buildFactorials(int n) {
 }
 ```
 
+Based on the factorials and the inverse factorials calculated above, we are now able to calculate *nCr*:
 ```java
 private long nCr(int r, int n) {
     if (r < 0 || r > n) return 0;
@@ -68,5 +69,5 @@ private long nCr(int r, int n) {
 }
 ```
 
-#### Exercises
+#### 1.2 Exercises
 - [3428. Maximum and Minimum Sums of at Most Size K Subsequences](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/description/)
