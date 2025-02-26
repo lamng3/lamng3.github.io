@@ -4,6 +4,7 @@ category: blog
 title: Useful Functions for LeetCode Contests
 snippet: Algorithms
 tags: [algorithms, leetcode]
+katex: true
 ---
 
 Here are some of the useful functions to help you with LeetCode contests. Some of them have ideas based on [Algorithms for Competitive Programming](https://cp-algorithms.com).
