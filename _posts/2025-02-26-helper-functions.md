@@ -15,7 +15,10 @@ Here are some of the useful functions to help you with LeetCode contests. Some o
 
 ### 1. Calculate nCr using Modular Multiplicative Inverse
 
-**nCr** is calculated as: $nCr = \frac{n!}{(n-r)! \dot r!}$
+**nCr** is calculated as: 
+```math
+nCr = \frac{n!}{(n-r)! \dot r!}
+```
 
 #### Code
 ```java
