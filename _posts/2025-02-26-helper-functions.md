@@ -17,15 +17,6 @@ Here are some of the useful functions to help you with LeetCode contests. Some o
 
 **nCr** is calculated as: $nCr = \frac{n!}{(n-r)! \dot r!}$
 
-$$
-A =
-\begin{bmatrix}
-1 & 2 \\
-3 & 4
-\end{bmatrix}
-$$
-
-
 #### Code
 ```java
 private int MOD = 1_000_000_007;
