@@ -6,15 +6,19 @@ snippet: Algorithms
 tags: [algorithms, leetcode]
 ---
 
+Here are some of the useful functions to help you with LeetCode contests. Some of them have ideas based on [Algorithms for Competitive Programming](https://cp-algorithms.com).
+
+---
+
 ### Table of Content
 1. Calculate nCr using Modular Multiplicative Inverse
 
 ### 1. Calculate nCr using Modular Multiplicative Inverse
 
 **nCr** is calculated as:
-```math
+$$
 nCr = \frac{n!}{(n-r)! \dot r!}
-```
+$$
 
 #### Code
 ```java
