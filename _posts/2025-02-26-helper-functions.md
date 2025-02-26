@@ -11,14 +11,20 @@ Here are some of the useful functions to help you with LeetCode contests. Some o
 ---
 
 ### Table of Content
-1. Calculate nCr using Modular Multiplicative Inverse
+1. Calculate **nCr** using **Modular Multiplicative Inverse**
 
 ### 1. Calculate nCr using Modular Multiplicative Inverse
 
-**nCr** is calculated as:
+**nCr** is calculated as: $nCr = \frac{n!}{(n-r)! \dot r!}$
+
 $$
-nCr = \frac{n!}{(n-r)! \dot r!}
+A =
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
 $$
+
 
 #### Code
 ```java
