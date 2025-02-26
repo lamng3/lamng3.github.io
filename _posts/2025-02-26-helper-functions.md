@@ -14,6 +14,8 @@ Here are some of the useful functions to help you with LeetCode contests. Some o
 ### Table of Content
 1. Calculate **nCr** using **Modular Multiplicative Inverse**
 
+---
+
 ### 1. Calculate nCr using Modular Multiplicative Inverse
 
 **nCr** is calculated as: 
@@ -25,7 +27,7 @@ $nCr = n! \times \text{inv}((n-r)!) \times \text{inv}(r!)$
 
 where $\text{inv}(a!)$ represents the modular inverse of $a!$.
 
-#### 1.1 Example Code
+#### 1.1. Example Code
 
 Constant `MOD` is set to $1{,}000{,}000{,}007$, a large prime number frequently used in competitive programming and algorithm design to avoid integer overflow and to guarantee the existence of modular inverses for any integer that is relatively prime to the modulus. The arrays `fact` and `invFact` are used to store the factorial values and their corresponding modular inverses, respectively.
 ```java
@@ -69,5 +71,7 @@ private long nCr(int r, int n) {
 }
 ```
 
-#### 1.2 Exercises
+#### 1.2. Exercises
 - [3428. Maximum and Minimum Sums of at Most Size K Subsequences](https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subsequences/description/)
+
+---
