@@ -25,7 +25,7 @@ You can contact me at ltn18 at case dot edu.
 Mohsen Hariri, **Lam Nguyen**, Sixu Chen, Shaochen Zhong, Qifan Wang, Xia Hu, Xiaotian Han, Vipin Chaudhary
 *Submitted to the Association for Computational Linguistics (ACL), 2025*
 \[[pdf](https://arxiv.org/pdf/2502.15075)\]
-\[[code](https://tinyurl.com/kv-adaquant)\]
+\[[code](https://github.com/mohsenhariri/kvq)\]
 
 ### Educations
 - *Aug. 2024 - Aug. 2025*, M.Sc., Computer Science, Case Western Reserve University.
