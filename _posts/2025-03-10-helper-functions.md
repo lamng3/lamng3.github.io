@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: leetcode
 title: Useful Functions for LeetCode Contests
 snippet: Algorithms
 tags: [algorithms, leetcode]

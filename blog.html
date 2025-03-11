@@ -43,6 +43,35 @@ layout: default
           <hr>
       {% endif %}
   {% endif %}
+
+  {% if post.category == "leetcode" %}
+      <a href="{{site.baseurl}}{{ post.url }}" class="post-title">
+          {{ post.title }}
+      </a>
+      <div class="post-details">
+          {{ post.date | date: "%m/%d/%Y" }}
+          <br>
+          {% for tag in post.tags %}
+              {% if post.tags.first == tag %}
+                  [
+              {% endif %}
+              <a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>
+              {% if post.tags.last == tag %}
+                  ]
+              {% else %}
+                  ,
+              {% endif %}
+          {% endfor %}
+      </div>
+      <br>
+      <div class="post-snippet">
+          {{ post.snippet }}
+      </div>
+      <br>
+      {% if forloop.last == false %}
+          <hr>
+      {% endif %}
+  {% endif %}
 {% endfor %}
 
 <!-- 1. [**LAM-Taxo: A  Large Action Model for Automatic Ontology Expansion and Ontology Matching**]() -->
