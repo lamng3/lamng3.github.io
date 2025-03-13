@@ -4,6 +4,7 @@ category: leetcode
 title: USACO Silver 2016 January - Angry Cows
 snippet: USACO Silver
 tags: [algorithms, usaco, silver]
+katex: true
 ---
 
 Give this problem a try [USACO Silver 2016 January - Angry Cows](http://usaco.org/index.php?page=viewproblem2&cpid=594).
@@ -12,7 +13,7 @@ Give this problem a try [USACO Silver 2016 January - Angry Cows](http://usaco.or
 
 ### Approach
 
-We perform binary search on the power R in the range [ 1, x[N]-x[1] ] to determine the minimal R needed such that the number of cows used does not exceed the allowed limit. For each candidate R, we adopt a greedy strategy: always target the leftmost undetonated hay bale, launch a cow so that its explosion at x[i] + R covers the interval [ x[i], x[i]+2R ], and then skip over all hay bales within this covered range. The task now becomes finding the minimum number of cows with power R needed to detonate all hay bales.
+We perform binary search on the power R in the range $[1, x[N]-x[1]]$ to determine the minimal R needed such that the number of cows used does not exceed the allowed limit. For each candidate R, we adopt a greedy strategy: always target the leftmost undetonated hay bale, launch a cow so that its explosion at $x[i] + R$ covers the interval $[x[i], x[i]+2R]$, and then skip over all hay bales within this covered range. The task now becomes finding the minimum number of cows with power R needed to detonate all hay bales.
 
 ---
 
