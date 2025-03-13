@@ -2,8 +2,8 @@
 layout: post
 category: leetcode
 title: USACO Silver 2016 January - Angry Cows
-snippet: Daily Practice
-tags: [algorithms, usaco, medium]
+snippet: USACO Silver
+tags: [algorithms, usaco, silver]
 ---
 
 Give this problem a try [USACO Silver 2016 January - Angry Cows](http://usaco.org/index.php?page=viewproblem2&cpid=594).
