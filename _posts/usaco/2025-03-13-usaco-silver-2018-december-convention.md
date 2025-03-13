@@ -6,7 +6,7 @@ snippet: Daily Practice
 tags: [algorithms, usaco, medium]
 ---
 
-Give this problem a try [USACO Silver 2018 December - Convention](https://usaco.guide/problems/usaco-858-convention/solution).
+Give this problem a try [USACO Silver 2018 December - Convention](http://www.usaco.org/index.php?page=viewproblem2&cpid=858).
 
 ---
 
