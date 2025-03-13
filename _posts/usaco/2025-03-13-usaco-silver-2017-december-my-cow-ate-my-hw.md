@@ -1,13 +1,13 @@
 ---
 layout: post
 category: leetcode
-title: C. Magic Ship
-snippet: Codeforces
-tags: [algorithms, codeforces, binary-search-value]
+title: USACO Silver 2017 December - My Cow Ate My Homework
+snippet: USACO Silver
+tags: [algorithms, usaco, silver]
 katex: true
 ---
 
-Give this problem a try [C. Magic Ship](https://codeforces.com/problemset/problem/1117/C).
+Give this problem a try [USACO Silver 2017 December - My Cow Ate My Homework](https://usaco.org/index.php?page=viewproblem2&cpid=762).
 
 ---
 
@@ -22,54 +22,41 @@ import java.io.*;
 import java.util.*;
 
 public class Solution {
-	public static long[] direction(char d) {
-		if (d == 'U') return new long[]{0,1};
-		if (d == 'D') return new long[]{0,-1}; 
-		if (d == 'L') return new long[]{-1,0}; 
-		if (d == 'R') return new long[]{1,0}; 
-		return new long[]{0,0};
-	}
-
-	public static boolean check(long k, long x1, long y1, long x2, long y2, int n, long[][] pref) {
-		long cnt = k / n, rem = k % n;
-		x1 += cnt * pref[n-1][0] + (rem > 0 ? pref[(int)(rem-1)][0] : 0L);
-		y1 += cnt * pref[n-1][1] + (rem > 0 ? pref[(int)(rem-1)][1] : 0L);
-		long manhattan = Math.abs(x2-x1) + Math.abs(y2-y1);
-		return manhattan <= k;
-	}
-
-	public static long search(long x1, long y1, long x2, long y2, int n, long[][] pref) {
-		long max = (long) 1e18;
-		long days = max;
-		for (long m = max; m >= 1; m/=2) {
-			while (check(days-m, x1, y1, x2, y2, n, pref)) {
-				days -= m;
-			}
-		}
-		return days;
-	}
-
     public static void main(String[] args) throws Exception {
-        // FastScanner io = new FastScanner("");
-		FastScanner io = new FastScanner();
+        FastScanner io = new FastScanner("homework");
+		// FastScanner io = new FastScanner();
 
-		long x1 = io.nextLong(), y1 = io.nextLong();
-		long x2 = io.nextLong(), y2 = io.nextLong();
+		int N = io.nextInt();
+		int[] hw = new int[N];
+		for (int i = 0; i < N; i++) hw[i] = io.nextInt();
 
-		int n = io.nextInt();
-		char[] s = io.next().toCharArray();
+		// prefix sum of hw scores
+		int[] pref = new int[N];
+		pref[0] = hw[0];
+		for (int i = 1; i < N; i++) pref[i] = pref[i-1] + hw[i]; 
 
-		// prefix sum on net changes
-		long[][] pref = new long[n][2];
-		pref[0] = direction(s[0]);
-		for (int i = 1; i < n; i++) {
-			long[] dir = direction(s[i]);
-			pref[i] = new long[]{pref[i-1][0] + dir[0], pref[i-1][1] + dir[1]};
+		// suffix storing minimum value up to index ith from end
+		int[] minSuff = new int[N];
+		minSuff[N-1] = hw[N-1];
+		for (int i = N-2; i >= 0; i--) minSuff[i] = Math.min(minSuff[i+1], hw[i]);
+
+		Map<Double, List<Integer>> Ks = new HashMap<>();
+		double maxAverageScore = 0;
+
+		for (int K = 1; K <= N-2; K++) {
+			int remaining = pref[N-1] - pref[K-1]; // sum K to N-1
+			int minHw = minSuff[K]; // minHW up to K
+			int score = remaining - minHw;
+			double average = (double) score / (N - (K+1)); // cast score to double first
+			maxAverageScore = Math.max(maxAverageScore, average);
+			Ks.putIfAbsent(average, new ArrayList<>());
+			Ks.get(average).add(K);
 		}
 
-		long answer = search(x1, y1, x2, y2, n, pref);
-		if (check(answer, x1, y1, x2, y2, n, pref)) io.println(answer);
-		else io.println(-1);
+		List<Integer> answer = Ks.get(maxAverageScore);
+		for (int i = 0; i < answer.size(); i++) {
+			io.println(answer.get(i));
+		}
 
 		io.close();
     }
@@ -77,7 +64,7 @@ public class Solution {
     /**
         RESERVED NUMBERS
     */
-    public static int MOD = 1_000_000_007;
+    public static int MOD = 1_000_000_007; // prime number
 
     /**
         DATA STRUCTURES
@@ -134,8 +121,8 @@ public class Solution {
 
 #### Complexity Analysis
 
-- Time Complexity: 
-- Space Complexity: 
+- Time Complexity: O(N)
+- Space Complexity: O(N)
 
 ---
 
