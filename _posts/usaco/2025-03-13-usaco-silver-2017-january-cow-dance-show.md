@@ -4,6 +4,7 @@ category: leetcode
 title: USACO Silver 2017 January - Cow Dance Show
 snippet: USACO Silver
 tags: [algorithms, usaco, silver, binary-search-value]
+katex: true
 ---
 
 Give this problem a try [USACO Silver 2017 January - Cow Dance Show](https://usaco.org/index.php?page=viewproblem2&cpid=690).
