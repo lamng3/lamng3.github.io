@@ -1,19 +1,18 @@
 ---
 layout: post
 category: leetcode
-title: USACO Silver 2016 January - Angry Cows
+title: USACO Silver 2017 January - Cow Dance Show
 snippet: USACO Silver
-tags: [algorithms, usaco, silver]
-katex: true
+tags: [algorithms, usaco, silver, binary-search-value]
 ---
 
-Give this problem a try [USACO Silver 2016 January - Angry Cows](http://usaco.org/index.php?page=viewproblem2&cpid=594).
+Give this problem a try [USACO Silver 2017 January - Cow Dance Show](https://usaco.org/index.php?page=viewproblem2&cpid=690).
 
 ---
 
 ### Approach
 
-We perform binary search on the power R in the range $[1, x[N]-x[1]]$ to determine the minimal R needed such that the number of cows used does not exceed the allowed limit. For each candidate R, we adopt a greedy strategy: always target the leftmost undetonated hay bale, launch a cow so that its explosion at $x[i] + R$ covers the interval $[x[i], x[i]+2R]$, and then skip over all hay bales within this covered range. The task now becomes finding the minimum number of cows with power R needed to detonate all hay bales.
+The intuition is to perform binary search on the value of K. The maximum value of K is 10,000 as $1 \leq K \leq N$. For each of the K, we need to check if the time needed for all cows to complete their dance (in other words, for the show to end) exceeds $T_max$. This is done by maintaining a Priority Queue for storing the time of the cows. Note that we add buffer time for each of the arriving cow, to account for the difference when we remove the previously finished cows. 
 
 ---
 
@@ -24,38 +23,48 @@ import java.io.*;
 import java.util.*;
 
 public class Solution {
-	public static boolean check(long R, int N, int K, long[] hays) {
-		long end = hays[0] + 2 * R;
-		int used = 1;
-		for (int i = 1; i < N; i++) {
-			if (hays[i] <= end) continue;
-			end = hays[i] + 2 * R;
-			used++;
+	public static boolean check(int k, int N, int Tmax, int[] d) {
+		if (k <= 0) return false;
+		
+		PriorityQueue<Integer> cows = new PriorityQueue<>();
+		int T = 0;
+
+		for (int i = 0; i < N; i++) {
+			if (cows.size() == k) {
+				int cow = cows.poll();
+				T = Math.max(T, cow);
+			}
+			cows.add(d[i] + T);
 		}
-		return used <= K;
+
+		while (!cows.isEmpty()) {
+			int cow = cows.poll();
+			T = Math.max(T, cow);
+		}
+
+		return T <= Tmax;
 	}
 
-	public static long search(long upper, int N, int K, long[] hays) {
-		long pos = upper;
-		for (long R = upper; R >= 1; R /= 2) {
-			while (check(pos - R, N, K, hays)) {
-				pos -= R;
+	public static int search(int N, int Tmax, int[] d) {
+		int max = 10000;
+		int k = max;
+		for (int x = max; x >= 1; x/=2) {
+			while (check(k-x, N, Tmax, d)) {
+				k -= x;
 			}
 		}
-		return pos;
+		return k;
 	}
 
     public static void main(String[] args) throws Exception {
-        FastScanner io = new FastScanner("angry");
+        FastScanner io = new FastScanner("cowdance");
 		// FastScanner io = new FastScanner();
 
-		int N = io.nextInt(), K = io.nextInt();
-		long[] hays = new long[N];
-		for (int i = 0; i < N; i++) hays[i] = io.nextLong();
-		Arrays.sort(hays);
+		int N = io.nextInt(), Tmax = io.nextInt();
+		int[] d = new int[N];
+		for (int i = 0; i < N; i++) d[i] = io.nextInt();
 
-		long upper = hays[N-1] - hays[0];
-		long answer = search(upper, N, K, hays);
+		int answer = search(N, Tmax, d);
 		io.println(answer);
 
 		io.close();
@@ -121,7 +130,7 @@ public class Solution {
 
 #### Complexity Analysis
 
-- Time Complexity: O(NlogN)
+- Time Complexity: O(N*log(N)*log(N))
 - Space Complexity: O(N)
 
 ---

@@ -132,7 +132,7 @@ public class Solution {
 #### Complexity Analysis
 
 - Time Complexity: O(NlogN)
-- Space Complexity: O(NlogN)
+- Space Complexity: O(N)
 
 ---
 
