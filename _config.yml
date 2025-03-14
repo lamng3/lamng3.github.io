@@ -25,12 +25,12 @@ navbar:
 #    link: "/blog"
 #  - name: "algorithms"
 #    link: "/algorithms"
- - name: "tags"
-   link: "/tags"
  - name: "github"
    link: "https://github.com/lamng3"
  - name: "open review"
    link: "https://openreview.net/profile?id=~Lam_Nguyen4"
+ - name: "tags"
+   link: "/tags"
 
 markdown: kramdown
 kramdown:
