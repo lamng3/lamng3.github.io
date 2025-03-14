@@ -15,11 +15,11 @@ Give this problem a try [USACO Silver 2019 February - Painting The Barn](https:/
 
 This problem reminds me of [Difference Array](https://codeforces.com/blog/entry/78762) approach, where essentially we are trying to count how many times each point in the grid is visited by the rectangles. Given a 1D problem, it is easy to directly apply Difference Array technique. However, when looking at 2D grid like this, we need to expand the approach. A 2D Prefix Sum is the candidate in this case. 
 
-A **naive** approach would be to iterate through each point of the rectangles and fill up. However, this approach would have the complexity to be **O(N * WIDTH^2)**, which will be TLE. 
+A **naive** approach would be to iterate through each point of the rectangles and fill up. However, this approach would have the complexity to be **$O(N * WIDTH^2)$**, which will be TLE. 
 
-A **better** approach would be to use Difference Array. For each of the rectangle, we iterate the rows and mark starting point as 1 and ending point as -1 (because we are considering points, not cells). An example of this would be the area of (1,1,5,5) is 16, not 25. Therefore, we can optimize our code to be **O(N*WIDTH + WIDTH^2)**. However, this will still be TLE as N is large.
+A **better** approach would be to use Difference Array. For each of the rectangle, we iterate the rows and mark starting point as 1 and ending point as -1 (because we are considering points, not cells). An example of this would be the area of (1,1,5,5) is 16, not 25. Therefore, we can optimize our code to be **$O(N*WIDTH + WIDTH^2)$**. However, this will still be TLE as N is large.
 
-The **best** approach involve using 2D Prefix Sum. Now the task becomes summing the sub-rectangles within the grid. Consider $f(i,j)$ to be the sum of all points $g(k,l)$ with $0 \leq k \leq i$ and $0 \leq l \leq j$. Therefore, we can calculate the value of $f(i,j)$ as $f(i,j) = f(i-1,j) + f(i,j-1) - f(i-1,j-1) + g(i,j)$. Note that we have 4 points as border points in the rectangle, so we will mark lower-left and upper-right as 1, and upper-left and lower-right as -1 to complete the prefix sum calculation. By doing this, we reduced the complexity to  **O(N + WIDTH^2)**, which will pass the test cases.
+The **best** approach involve using 2D Prefix Sum. Now the task becomes summing the sub-rectangles within the grid. Consider $f(i,j)$ to be the sum of all points $g(k,l)$ with $0 \leq k \leq i$ and $0 \leq l \leq j$. Therefore, we can calculate the value of $f(i,j)$ as $f(i,j) = f(i-1,j) + f(i,j-1) - f(i-1,j-1) + g(i,j)$. Note that we have 4 points as border points in the rectangle, so we will mark lower-left and upper-right as 1, and upper-left and lower-right as -1 to complete the prefix sum calculation. By doing this, we reduced the complexity to  **$O(N + WIDTH^2)$**, which will pass the test cases.
 
 ---
 
@@ -129,8 +129,8 @@ public class Solution {
 
 #### Complexity Analysis
 
-- Time Complexity: O(N + WIDTH^2)
-- Space Complexity: O(WIDTH^2)
+- Time Complexity: $O(N + WIDTH^2)$
+- Space Complexity: $O(WIDTH^2)$
 
 ---
 
