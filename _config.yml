@@ -25,6 +25,8 @@ navbar:
 #    link: "/blog"
 #  - name: "algorithms"
 #    link: "/algorithms"
+ - name: "tags"
+   link: "/tags"
  - name: "github"
    link: "https://github.com/lamng3"
  - name: "open review"
