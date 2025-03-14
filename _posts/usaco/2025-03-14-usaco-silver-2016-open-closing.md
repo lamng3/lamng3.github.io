@@ -1,25 +1,19 @@
 ---
 layout: post
 category: leetcode
-title: USACO Silver 2019 February - Painting The Barn
+title: USACO Silver 2016 Open - Closing The Farm
 snippet: USACO Silver
-tags: [algorithms, usaco, silver-hard]
+tags: [algorithms, usaco, silver]
 katex: true
 ---
 
-Give this problem a try [USACO Silver 2019 February - Painting The Barn](https://usaco.org/index.php?page=viewproblem2&cpid=919).
+Give this problem a try [USACO Silver 2016 Open - Closing The Farm](https://usaco.org/index.php?page=viewproblem2&cpid=644).
 
 ---
 
 ### Approach
 
-This problem reminds me of [Difference Array](https://codeforces.com/blog/entry/78762) approach, where essentially we are trying to count how many times each point in the grid is visited by the rectangles. Given a 1D problem, it is easy to directly apply Difference Array technique. However, when looking at 2D grid like this, we need to expand the approach. A 2D Prefix Sum is the candidate in this case. 
-
-A **naive** approach would be to iterate through each point of the rectangles and fill up. However, this approach would have the complexity to be **$O(N \times WIDTH^2)$**, which will be TLE. 
-
-A **better** approach would be to use Difference Array. For each of the rectangle, we iterate the rows and mark starting point as 1 and ending point as -1 (because we are considering points, not cells). An example of this would be the area of (1,1,5,5) is 16, not 25. Therefore, we can optimize our code to be **$O(N \times WIDTH + WIDTH^2)$**. However, this will still be TLE as N is large.
-
-The **best** approach involve using 2D Prefix Sum. Now the task becomes summing the sub-rectangles within the grid. Consider $f(i,j)$ to be the sum of all points $g(k,l)$ with $0 \leq k \leq i$ and $0 \leq l \leq j$. Therefore, we can calculate the value of $f(i,j)$ as $f(i,j) = f(i-1,j) + f(i,j-1) - f(i-1,j-1) + g(i,j)$. Note that we have 4 points as border points in the rectangle, so we will mark lower-left and upper-right as 1, and upper-left and lower-right as -1 to complete the prefix sum calculation. By doing this, we reduced the complexity to  **$O(N + WIDTH^2)$**, which will pass the test cases.
+This problem basically checks if the farm is still "fully connected" after closing the barns. I am using DSU to check the fully connected property, but this can also be done with simple DFS. 
 
 ---
 
@@ -30,12 +24,76 @@ import java.io.*;
 import java.util.*;
 
 public class Solution {
+	static class DSU {
+		int[] parent;
+		int[] sz;
+
+		public DSU(int N) {
+			parent = new int[N];
+			sz = new int[N];
+			for (int i = 0; i < N; i++) {
+				parent[i] = i;
+				sz[i] = 1;
+			}
+		}
+
+		public int find(int v) {
+			if (parent[v] == v) return parent[v];
+			return parent[v] = find(parent[v]);
+		}
+
+		public void union(int a, int b) {
+			a = find(a);
+			b = find(b);
+			if (a != b) {
+				if (sz[a] < sz[b]) {
+					int tmp = a;
+					a = b;
+					b = tmp;
+				}
+				parent[b] = a;
+				sz[a] += sz[b];
+			}
+		}
+	}
+	
+	// O(N)
+	public static boolean connected(int N, Set<Integer> closed, int[][] edge) {
+		DSU dsu = new DSU(N);
+		for (int[] e : edge) {
+			if (closed.contains(e[0]) || closed.contains(e[1])) continue;
+			dsu.union(e[0], e[1]);
+		}
+
+		Set<Integer> parents = new HashSet<>();
+		for (int i = 0; i < N; i++) {
+			if (closed.contains(i)) continue;
+			int p = dsu.find(i);
+			parents.add(p);
+		}
+		return parents.size() == 1;
+	}
+
     public static void main(String[] args) throws Exception {
-        FastScanner io = new FastScanner("paintbarn");
+        FastScanner io = new FastScanner("closing");
 		// FastScanner io = new FastScanner();
 		
+		int N = io.nextInt(), M = io.nextInt();
 		
-        
+		int[][] edge = new int[M][2];
+		for (int i = 0; i < M; i++) {
+			edge[i] = new int[]{io.nextInt()-1, io.nextInt()-1};
+		}
+
+		Set<Integer> closed = new HashSet<>();
+
+		for (int i = 0; i < N; i++) {
+			int barn = io.nextInt()-1;
+			boolean isConnected = connected(N, closed, edge);
+			io.println(isConnected ? "YES" : "NO");
+			closed.add(barn);
+		}
+
 		io.close();
     }
 
@@ -43,6 +101,7 @@ public class Solution {
         RESERVED NUMBERS
     */
     public static int MOD = 1_000_000_007; // prime number
+	public static int INF = 1_000_000_007; // infinity number
 
     /**
         DATA STRUCTURES
@@ -99,8 +158,8 @@ public class Solution {
 
 #### Complexity Analysis
 
-- Time Complexity: $O(N + WIDTH^2)$
-- Space Complexity: $O(WIDTH^2)$
+- Time Complexity: $O(N^2 + N \times M)$
+- Space Complexity: $O(N + M)$
 
 ---
 
