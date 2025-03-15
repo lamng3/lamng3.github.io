@@ -1,13 +1,13 @@
 ---
 layout: post
 category: leetcode
-title: USACO Silver 2019 February - Painting The Barn
+title: USACO Silver 2019 December - Milk Visits
 snippet: USACO Silver
-tags: [algorithms, usaco, silver-hard]
+tags: [algorithms, usaco, silver]
 katex: true
 ---
 
-Give this problem a try [USACO Silver 2019 February - Painting The Barn](https://usaco.org/index.php?page=viewproblem2&cpid=919).
+Give this problem a try [USACO Silver 2019 December - Milk Visits](https://usaco.org/index.php?page=viewproblem2&cpid=968).
 
 ---
 
