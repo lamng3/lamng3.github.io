@@ -154,7 +154,7 @@ public class Solution {
 #### Complexity Analysis
 
 - Time Complexity: $O(N \times \alpha(N) + M \times \alpha(N))$ 
-    - Where $\alpha(N)$ is the inverse Ackermann function, which grows very slowly. $\alpha(N) \leq 4$ for $N < 10^600$
+    - Where $\alpha(N)$ is the inverse Ackermann function, which grows very slowly. $\alpha(N) \leq 4$ for $N < 10^{600}$
     - Worst case scenario of DSU would be $O(logN)$
 - Space Complexity: $O(N)$
 
